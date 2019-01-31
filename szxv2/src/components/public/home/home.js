@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
+import {Switch, Route, Redirect} from 'react-router-dom'
+import MyNavLink from '../../nav-link/my-nav-link'
+import DataCenter from './data-center'
+import DataTool from './data-tool'
 
 class Home extends Component {
-
-	constructor(){
-      super();
-      this.handleClick = this.handleClick.bind(this);
-      this.state = {name:'Hello world!'};
-  }
-
-	handleClick = (e) => {
-    console.log('this is:', this);
-  }
 
   render() {
     return (
       <div>
-        this is home
+        <div>
+          <div className="mid-nav">
+            <div className="mid-nav1">
+              <MyNavLink to='/home/data-center'>数据中心</MyNavLink>
+            </div>
+            <div className="mid-nav2">
+              <MyNavLink to='/home/data-tool'>数据工具</MyNavLink>
+            </div>
+          </div>
+
+          <Switch>
+            <Route path='/home/data-center' component={DataCenter} />
+            <Route path='/home/data-tool' component={DataTool} />
+            <Redirect to='/home/data-center'/>
+          </Switch>
+        </div>
       </div>
     );
   }

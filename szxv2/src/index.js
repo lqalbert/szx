@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
+import { LocaleProvider } from 'antd';
+import zh_CN from 'antd/lib/locale-provider/zh_CN';
 
 import './js/utils.js'
 
 ReactDOM.render(
 	<BrowserRouter>
-		<App />
+    <LocaleProvider locale={zh_CN}><App /></LocaleProvider>
 	</BrowserRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
