@@ -4,8 +4,8 @@ import './App.css';
 
 import Head from './components/common/head'
 import Foot from './components/common/foot'
-// import Home from './components/public/home/home'
-import Home from './components/public/home/support-index'
+import Home from './components/public/home/home'
+// import Home from './components/public/home/support-index'
 import Apply from './components/public/apply/apply'
 import Admin from './components/admin/admin'
 
