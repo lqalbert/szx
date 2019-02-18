@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import logo from '../../assets/images/logo.png';
 import avatar from '../../assets/images/avatar.jpg';
-import banner from '../../assets/images/banner.png';
 
 class Head extends Component {
 
@@ -24,9 +23,6 @@ class Head extends Component {
             </Badge>
             <Link to="/" className="link nav4" >支持</Link>
           </div>
-        </div>
-        <div className="banner">
-          <img src={banner} className='banner' alt="轮播图"/>
         </div>
       </div>
     );

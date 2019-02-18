@@ -1,3 +1,16 @@
+/*----------变量---------------*/
+$borderColor: #d1d1d1;
+$boxShadowColor: #d1d1d1;
+/*----------变量 End---------------*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{color: #333; font-size: 13px;}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
 .App {
   text-align: center;
 }
@@ -478,4 +491,308 @@
 .company .company-wrap .support .support-name{
     line-height: 56px;
     margin-left: 10px;
+}
+
+.carousel {
+  height: 100%;
+}
+.carousel-box {
+  width: 100%;
+  height: 436px;
+}
+.szx .carousel-box {
+  height: 426px;
+}
+.carousel-inner {
+  top: -5px;
+  height: 430px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+}
+.carousel-inner>div,.carousel-inner>div>div {
+  height: 100%;
+}
+.carousel-control {
+  font-size: 100px;
+  line-height: 386px;
+  height: calc(100% - 5px);
+}
+.carousel-indicators li,.carousel-indicators .active {
+  margin-right: 10px;
+}
+.introduce_container {
+  height: 318px;
+  margin-top: 10px;
+  position: relative;
+}
+.introduce_container>h4 {
+  color: #576671;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.introduce_container>h4 span{
+  color: #2db5f4;
+}
+.introduce_container .intro_cont {
+  position: absolute;
+  left: 50%;
+}
+.intro_box{
+  width: 1200px;
+  margin-left: -50%;
+}
+.intro_box>div{
+  text-align: center;
+  padding: 0 40px;
+}
+.intro_box>div strong{
+  display: block;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/*----------首页---------------*/
+.minWrapper {
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.szx-wrapper, .wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home-nav {
+  box-shadow: 0 0 36px 3px #ddd;
+}
+.home-nav .row > a{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #3e3e3e;
+  font-size: 16px;
+  line-height: 30px;
+  height: 125px;
+}
+.home-nav .row > a:hover {
+  background: #f2f6fa;
+}
+.home-item {
+  margin-top: 10px;
+  color: #3e3e3e;
+  border-bottom: 1px solid #e5e5e5;
+}
+.home-item h3 ul {
+  display: inline-block;
+}
+.home-item h3 ul li {
+  display: inline-block;
+  font-size: 20px;
+  color: #3e3e3e;
+  margin: 15px 40px 15px 0px;
+  line-height: 34px;
+  cursor: pointer;
+}
+.home-item h3 ul li.active {
+  color: #004ea1;
+  border-bottom: 3px solid #004ea1;
+  cursor: default;
+}
+.home-item a {
+  float: right;
+  font-size: 15px;
+  color: #004ea1;
+  line-height: 40px;
+  margin-top: 15px;
+}
+.home-item a:hover {
+  text-decoration: underline;
+}
+.home-item p {
+  font-size: 14px;
+  color: rgba(62, 62, 62, .8);
+  margin-bottom: 15px;
+}
+.home-item .table td {
+  padding: 11px 8px;
+  font-size: 14px;
+  color: #535353;
+  text-align: center;
+  border-color: #f2f2f2;
+}
+.home-item .table th {
+  padding-left: 8px !important;
+  padding-right: 0 !important;
+}
+.home-item .table tr td > div {
+  overflow: hidden;
+  white-space:
+  nowrap;text-overflow: ellipsis;
+}
+.home-item .table td a {
+  float: none;
+  margin-top: 0;
+  padding: 0;
+  line-height: 20px;
+}
+.home-item .table th {
+  padding: 11px 8px;
+  color: #004ea1;
+  font-size: 15px;
+  background: #f7f9fc;
+  border-bottom: 1px solid #acc6e1 !important;
+}
+.home-item .table tr th, .home-item .table tr td {
+  text-align: left !important;
+}
+.home-item .table tr:hover td {
+  color: #004ea1;
+}
+.szx-home-table th {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.home-ads {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.home-ads h2 {
+  line-height: 130px;
+  text-align: center;
+}
+.home-ads p {
+  position: relative;
+  overflow: hidden;
+}
+.home-ads p a {
+  display: block;
+  width: 50%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0);
+}
+.home-ads p a img {
+  width: 100%;
+}
+.h-technology {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  overflow: hidden;
+  background-size: cover;
+}
+.h-business {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background-size: cover;
+}
+.tr, .home-item .table tr th.tr {
+  text-align: right !important;
+}
+.home-item table {
+    width: 100%;
+}
+.link a {
+  display: inline-block;
+  width: 300px;
+  height: 152px;
+  background: url(./assets/images/icons.png) no-repeat;
+}
+.link a.link1 {
+  background-position: 8px -1077px;
+}
+.link a.link2 {
+  background-position: 8px -1263px;
+}
+.link a.link3 {
+  background-position: 8px -1455px;
+}
+.link a.link4 {
+  background-position: 8px -1644px;
+}
+.s-nav {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: url(./assets/images/icons.png) no-repeat;
+}
+.s-nav.nav1 {
+  background-position: -20px -394px;
+}
+.s-nav.nav2 {
+  background-position: -23px -503px;
+}
+.s-nav.nav3 {
+  background-position: -156px -503px;
+}
+.s-nav.nav4 {
+  background-position: -24px -610px;
+}
+.s-nav.nav5 {
+  background-position: -155px -610px;
+}
+.s-nav.nav6 {
+  background-position: -157px -394px;
+}
+.ant-carousel .slick-slide {
+  text-align: center;
+}
+.ant-carousel .slick-slide img {
+    width: 100%;
+}
+/*----------个人中心---------------*/
+.adminMenu {
+    width: 280px;
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 0px $boxShadowColor;
+    padding-bottom: 200px;
+    dt {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        background: #337ac4;
+    }
+    dd {
+        padding: 0 20px;
+        text-align: center;
+        ul {
+            margin-top: 20px;
+            li {
+                padding: 15px 0px;
+            }
+            a {
+                display: block;
+                line-height: 30px;
+                text-align: center;
+                color: #535353;
+                border-radius: 30px;
+                font-weight: bold;
+                span {
+                    display: inline-block;
+                    width: 110px;
+                    text-align: left;
+                }
+                &.active {
+                    background:linear-gradient(to right,#08a7e5, #55c9fe);
+                    color: #fff;
+                }
+            }
+        }
+    }
 }

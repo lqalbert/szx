@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from "react-router-dom";
 
+import Menu from './menu'
 import Personal from './personal'
 
 class Admin extends Component {
@@ -18,7 +19,9 @@ class Admin extends Component {
   render() {
     return (
       <div>
-        admin
+        <div className="wrapper">
+          <Menu />
+        </div>
         <Route path="/admin/personal" component={Personal} />
       </div>
     );

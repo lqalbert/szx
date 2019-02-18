@@ -27,6 +27,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "antd": "^3.13.0"
+    "antd": "^3.13.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
   }
 }

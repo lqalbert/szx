@@ -3,6 +3,7 @@ import {Switch, Route, Redirect} from 'react-router-dom'
 import MyNavLink from '../../nav-link/my-nav-link'
 import DataCenter from './data-center'
 import DataTool from './data-tool'
+import banner from '../../../assets/images/banner.png';
 
 class Home extends Component {
 
@@ -10,6 +11,9 @@ class Home extends Component {
     return (
       <div>
         <div>
+          <div className="banner">
+            <img src={banner} className='banner' alt="轮播图"/>
+          </div>
           <div className="mid-nav">
             <div className="mid-nav1">
               <MyNavLink to='/home/data-center'>数据中心</MyNavLink>
