@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Personal extends Component {
 
@@ -20,17 +20,17 @@ class Personal extends Component {
           <dt>个人中心</dt>
           <dd>
             <ul>
-              <li><Link to="/zillow-group" className="active"><span>账户资料</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的资金</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的订单</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的购物车</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的API</span></Link></li>
-              <li><Link to="/zillow-group"><span>使用情况</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的收藏</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的发票</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的消息</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的邀请</span></Link></li>
-              <li><Link to="/zillow-group"><span>我的Key</span></Link></li>
+              <li><NavLink to="/admin/personal" activeClassName='active'><span><i className="menu-icon1"></i>账户资料</span></NavLink></li>
+              <li><NavLink to="/admin/capital" activeClassName='active'><span><i className="menu-icon2"></i>我的资金</span></NavLink></li>
+              <li><NavLink to="/admin/order" activeClassName='active'><span><i className="menu-icon3"></i>我的订单</span></NavLink></li>
+              <li><NavLink to="/admin/cart" activeClassName='active'><span><i className="menu-icon4"></i>我的购物车</span></NavLink></li>
+              <li><NavLink to="/admin/api" activeClassName='active'><span><i className="menu-icon5"></i>我的API</span></NavLink></li>
+              <li><NavLink to="/admin/use" activeClassName='active'><span><i className="menu-icon6"></i>使用情况</span></NavLink></li>
+              <li><NavLink to="/admin/collect" activeClassName='active'><span><i className="menu-icon7"></i>我的收藏</span></NavLink></li>
+              <li><NavLink to="/admin/invoice" activeClassName='active'><span><i className="menu-icon8"></i>我的发票</span></NavLink></li>
+              <li><NavLink to="/admin/msg" activeClassName='active'><span><i className="menu-icon9"></i>我的消息</span></NavLink></li>
+              <li><NavLink to="/admin/invitation" activeClassName='active'><span><i className="menu-icon10"></i>我的邀请</span></NavLink></li>
+              <li><NavLink to="/admin/key" activeClassName='active'><span><i className="menu-icon11"></i>我的Key</span></NavLink></li>
             </ul>
           </dd>
         </dl>
