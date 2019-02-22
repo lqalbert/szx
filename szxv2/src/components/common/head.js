@@ -9,7 +9,7 @@ class Head extends Component {
 
   render() {
     return (
-      <div>
+      <div className="bgfff">
         <div className="top">
           <img src={logo} className='logo' alt="logo"/>
           <div className="title">深证信数据服务平台</div>

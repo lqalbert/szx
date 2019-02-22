@@ -22,7 +22,7 @@ class Personal extends Component {
             <ul>
               <li><NavLink to="/admin/personal" activeClassName='active'><span><i className="menu-icon1"></i>账户资料</span></NavLink></li>
               <li><NavLink to="/admin/capital" activeClassName='active'><span><i className="menu-icon2"></i>我的资金</span></NavLink></li>
-              <li><NavLink to="/admin/order" activeClassName='active'><span><i className="menu-icon3"></i>我的订单</span></NavLink></li>
+              <li><NavLink to="/admin/orderlist" activeClassName='active'><span><i className="menu-icon3"></i>我的订单</span></NavLink></li>
               <li><NavLink to="/admin/cart" activeClassName='active'><span><i className="menu-icon4"></i>我的购物车</span></NavLink></li>
               <li><NavLink to="/admin/api" activeClassName='active'><span><i className="menu-icon5"></i>我的API</span></NavLink></li>
               <li><NavLink to="/admin/use" activeClassName='active'><span><i className="menu-icon6"></i>使用情况</span></NavLink></li>

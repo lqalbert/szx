@@ -9,6 +9,7 @@ import Home from './components/public/home/home'
 // import Home from './components/public/home/support-index'
 import Apply from './components/public/apply/apply'
 import Admin from './components/admin/admin'
+import Order from './components/admin/order'
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
       		<Route path="/home" component={Home} />
 	        <Route path="/apply" component={Apply}/>
 	        <Route path="/admin" component={Admin}/>
+          <Route path="/order" component={Order} />
       	<Foot />
       </div>
     );

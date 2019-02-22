@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
-import { Row, Col, Rate, Button, Modal, Form, Input, DatePicker, Table, Divider, Tag } from 'antd';
+import { Row, Col, Button, Modal, Form, Input, Select, Search, DatePicker, Table, Divider, Tag } from 'antd';
 
 import icon1 from '../../assets/images/icon1.png'
 import icon2 from '../../assets/images/icon2.png'
@@ -94,58 +94,33 @@ class Capital extends Component {
   render() {
     return (
       <div>
-        <Row className="tc fc666 borderShadow">
-          <Col span={6} className="ptb20">
-            <p><strong className="fce71524 fs24">15553648.00</strong>元</p>
-            <p className="fc999">我的API</p>
+        <Row>
+          <Col span={24} className="lh60 pl20 fs14 fc004ea1 bold">
+            订单列表
           </Col>
-          <Col span={6} className="ptb20">
-            <Button type="primary" size="large" className="mt20">去充值</Button>
-          </Col>
-          <Col span={6} className="ptb20 bl">
-            <p><strong className="fce71524 fs24">1555364</strong>次</p>
-            <p className="fc999">可用赠送币</p>
-          </Col>
-          <Col span={6} className="ptb20">
-            <Button type="primary" size="large" className="mt20">去获得</Button>
+          <Col span={24}>
+            <Row>
+              <Col span={10}>
+                时间：<DatePicker.RangePicker onChange={this.onChangeRangePicker} />
+              </Col>
+              <Col span={6}>
+                <Select defaultValue="lucy" style={{ width: '92%' }}>
+                  <Select.Option value="jack">Jack</Select.Option>
+                  <Select.Option value="lucy">近一个月</Select.Option>
+                  <Select.Option value="disabled" disabled>Disabled</Select.Option>
+                  <Select.Option value="Yiminghe">yiminghe</Select.Option>
+                </Select>
+              </Col>
+              <Col span={8}>
+                <Input.Search
+                  placeholder="输入搜索关键字，如API名称"
+                  onSearch={value => console.log(value)}
+                  enterButton
+                />
+              </Col>
+            </Row>
           </Col>
         </Row>
-        <div className="borderShadow mt20">
-          <div className="lh60 pl20 fs14 fc004ea1 bold bgf7f9fc bbb1c9e2">
-            我的账单
-          </div>
-          <div className="plr20 fc666 filter">
-            <Row className="pt20">
-              <Col span={2}>
-                时间：
-              </Col>
-              <Col span={20}>
-                <DatePicker.RangePicker onChange={this.onChangeRangePicker} />
-              </Col>
-            </Row>
-            <Row className="pt20">
-              <Col span={2}>
-                分类：
-              </Col>
-              <Col span={20}>
-                <span className="filter-text"><i>全部</i></span>
-                <span className="filter-text active"><i>充值</i></span>
-                <span className="filter-text"><i>消费</i></span>
-              </Col>
-            </Row>
-            <Row className="ptb20">
-              <Col span={2}>
-                用途：
-              </Col>
-              <Col span={20}>
-                <span className="filter-text disabled"><i>全部</i></span>
-                <span className="filter-text disabled"><i>购买权限</i></span>
-                <span className="filter-text disabled"><i>购买服务</i></span>
-                <span className="filter-text disabled"><i>接口使用</i></span>
-              </Col>
-            </Row>
-          </div>
-        </div>
         <div className="borderShadow mt20">
           <Table columns={this.state.columns} dataSource={this.state.data} pagination={{size: 'small'}} className="szx-ant-table-pagination" />
         </div>

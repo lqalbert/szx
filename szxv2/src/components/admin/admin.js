@@ -6,7 +6,7 @@ import Rmd from './rmd'
 import PersonalWrapper from './personalWrapper'
 import PayWrapper from './payWrapper'
 import Capital from './capital'
-import Order from './order'
+import Orderlist from './orderlist'
 import Cart from './cart'
 import Api from './api'
 import Use from './use'
@@ -52,7 +52,7 @@ class Admin extends Component {
             <Route path="/admin/rmd" component={Rmd} />
             <Route path="/admin/personal" component={PersonalWrapper} />
             <Route path="/admin/capital" component={Capital} />
-            <Route path="/admin/order" component={Order} />
+            <Route path="/admin/orderlist" component={Orderlist} />
             <Route path="/admin/cart" component={Cart} />
             <Route path="/admin/api" component={Api} />
             <Route path="/admin/use" component={Use} />
