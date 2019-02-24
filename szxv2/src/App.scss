@@ -1377,7 +1377,138 @@ body {
     color: $c004ea1;
 }
 /*-------------------产品列表--------------------*/
+.package-wrap{
+    width: 1200px;
+    margin: 20px auto;
+}
+.package-intro{
+    border: solid 1px $borderColor;
+    .intro{
+        background-color: #f9f9f9;
+        height: 46px;
+        line-height: 46px;
+        .package-name{
+            color:$c004ea1;
+            font-size:16px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .right{
+            text-align: right;
+            padding-right: 10px;
+            .like{
+                margin-right: 5px;
+            }
+            .star{
+                margin-right: 5px;
+                margin-left: 30px;
+            }
+        }
 
+    }
+    .package-info{
+        padding-left: 10px;
+        background-color: white;
+        padding-top: 10px;
+        .interfaces{
+            padding: 10px;
+            background-color: #F7F9FC;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .regular{
+            display: inline-block;
+            float: left;
+            margin: 10px 10px 20px 0px;
+            border: 1px solid #f7e6a1;
+            background-color: #fefcf3;
+            width: 74px;
+            height: 24px;
+            text-align: center;
+        }
+        .recharge{
+            display: inline-block;
+            float: left;
+            margin: 10px 10px 20px 0px;
+            border: 1px solid #99b8d9;
+            background-color: #f5f8fb;
+            width: 74px;
+            height: 24px;
+            text-align: center;
+        }
+    }
+}
+
+/*---------------海外申请------------------------*/
+.apply{
+    background-color: white;
+}
+.oversea-apply{
+    width: 1200px;
+    margin: 0 auto;
+    .create-account{
+        font-size: 16px;
+        margin: 40px 0;
+    }
+    .a1{
+        margin-bottom: 40px;
+    }
+    .a2{
+        margin-bottom: 40px;
+    }
+    .a3{
+        margin-bottom: 40px;
+    }
+    .next{
+        //margin: 100px 0 100px 0 ;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .next>div{
+        display: inline-block;
+        border: 1px solid #f7e6a1;
+        background-color: #fefcf3;
+        width: 74px;
+        height: 24px;
+        text-align: center;
+        color: #ECC42B;
+    }
+    .check{
+        margin-top: 80px;
+        color: #ECC42B;
+        font-size: 40px;
+    }
+    .check>div{
+        width:94px;
+        height: 94px;
+        border-radius: 50%;
+        border:solid 1px #FAEDBE;
+        background-color:#FEFCF3 ;
+        line-height: 94px;
+        text-align: center;
+    }
+    .subsuc{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .sub-tip{
+        padding-bottom: 150px;
+    }
+}
+/*--------------机构注册----------------------*/
+.organization{
+    background-color: white;
+}
+.organization-apply{
+    width: 1200px;
+    margin: 0 auto;
+    .base-info{
+        margin-top: 20px;
+    }
+}
 
 
 
